@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stellwerk downloads</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  body { font: 16px/1.5 -apple-system, system-ui, sans-serif; max-width: 34rem; margin: 4rem auto; padding: 0 1.25rem; color: #1d1d1f; }
+  @media (prefers-color-scheme: dark) { body { background: #111; color: #eee; } .card { background: #1c1c1e !important; } }
+  header { display: flex; align-items: center; gap: .9rem; }
+  header img { width: 72px; height: 72px; }
+  h1 { font-size: 1.8rem; margin: 0; }
+  .card { background: #f5f5f7; border-radius: 14px; padding: 1.1rem 1.25rem; margin: 1rem 0; }
+  .card h2 { font-size: 1.1rem; margin: 0 0 .25rem; }
+  a.button { display: inline-block; margin-top: .6rem; padding: .55rem 1rem; border-radius: 10px; background: #0071e3; color: #fff; text-decoration: none; font-weight: 600; }
+  .muted { color: #86868b; font-size: .9rem; }
+</style>
+</head>
+<body>
+<header>
+  <img src="icon.png" alt="">
+  <div>
+    <h1>Stellwerk</h1>
+    <p class="muted" style="margin:0">Run Claude Code and Codex on your Mac and drive them from anywhere.</p>
+  </div>
+</header>
+
+<div class="card" id="mac">
+  <h2>Stellwerk for Mac</h2>
+  <div id="mac-body" class="muted">Looking up the newest version…</div>
+</div>
+
+<div class="card" id="android" hidden>
+  <h2>Stellwerk for Android</h2>
+  <div id="android-body"></div>
+</div>
+
+<p class="muted">The iPhone app comes through TestFlight. Stellwerk for Mac and the Android app update themselves once installed.</p>
+
+<script>
+// Reads the newest versions from the same feeds the apps check, so this page never goes stale.
+const params = new URLSearchParams(location.search);
+fetch("appcast.xml", { cache: "no-store" }).then(r => r.text()).then(xml => {
+  const doc = new DOMParser().parseFromString(xml, "application/xml");
+  const item = doc.querySelector("item");
+  if (!item) throw new Error("no release yet");
+  const url = item.querySelector("enclosure").getAttribute("url");
+  const version = item.getElementsByTagName("sparkle:shortVersionString")[0].textContent;
+  if (params.has("mac")) { location.replace(url); return; }
+  document.getElementById("mac-body").innerHTML =
+    `Version ${version} · open the disk image and drag Stellwerk onto Applications.<br>` +
+    `<a class="button" href="${url}">Download Stellwerk ${version}</a>`;
+}).catch(() => { document.getElementById("mac-body").textContent = "No release yet."; });
+fetch("android.json", { cache: "no-store" }).then(r => r.ok ? r.json() : Promise.reject()).then(feed => {
+  if (params.has("android")) { location.replace(feed.url); return; }
+  document.getElementById("android").hidden = false;
+  document.getElementById("android-body").innerHTML =
+    `<span class="muted">Version ${feed.versionName} · open the APK and allow your browser to install it.</span><br>` +
+    `<a class="button" href="${feed.url}">Download Stellwerk ${feed.versionName}</a>`;
+}).catch(() => {});
+</script>
+</body>
+</html>
