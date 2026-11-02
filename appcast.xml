@@ -3,6 +3,15 @@
   <channel>
     <title>Stellwerk</title>
     <item>
+      <title>Stellwerk 0.19.0</title>
+      <pubDate>Mon, 02 Nov 2026 09:24:36 GMT</pubDate>
+      <sparkle:version>202611020914</sparkle:version>
+      <sparkle:shortVersionString>0.19.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<h3>Minor Changes</h3><li>#9 `fd0cf5a` Thanks @fabifink! - Operator, step two: the Operator is now a chat, on the Mac beside the overview and to-dos, on iPhone, iPad and Android with Chat and Status tabs. It runs on the Mac (Opus 5.5 at medium effort by default; Settings → Operator on the Mac), looks up what&#x27;s open, reads a chat when you want details, passes your instructions to a chat, starts workspaces and keeps the to-do list. It never answers an agent&#x27;s question on its own, only with your answer. A to-do added in the list goes to the Operator, which does small ones itself and starts a workspace for code changes; Settings → Operator turns that off.</li><li>#9 `fd0cf5a` Thanks @fabifink! - Operator, step one: a new first entry above all projects on the Mac, iPhone, iPad and Android. It shows every chat that needs you, failed, is ready or works, each in one line, and a to-do list you can add to, edit, check off and start a workspace from. After each turn a small model on the Mac (Haiku by default, Settings → Operator on the Mac, or off) writes that line from the chat&#x27;s last messages, so the overview costs no tokens to look at. The Operator chat itself comes next.</li><h3>Patch Changes</h3><li>#8 `4c21a53` Thanks @fabifink! - Stellwerk for Mac: &quot;Check for Updates…&quot; is now also in the app menu, below &quot;About Stellwerk&quot;. iPhone, iPad and Android update through their stores or the download page, so nothing changes there.</li>]]></description>
+      <enclosure url="https://lotum.github.io/stellwerk-releases/Stellwerk-Host-0.19.0-202611020914.dmg" sparkle:edSignature="9gnwXkmGfc/H/KU1elczzOzyi4P9xzjm+2aRtJQapJVhjdEoztM/L5Uw7esiIOZo22pLZLIUph7MV0b/cG0oCg==" length="70086534" type="application/octet-stream"/>
+    </item>
+    <item>
       <title>Stellwerk 0.18.1</title>
       <pubDate>Mon, 02 Nov 2026 07:51:04 GMT</pubDate>
       <sparkle:version>202611020742</sparkle:version>
