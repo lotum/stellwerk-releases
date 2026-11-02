@@ -1,6 +1,6 @@
 {
-  "versionName": "0.22.0",
-  "versionCode": 29894173,
-  "url": "https://lotum.github.io/stellwerk-releases/Stellwerk-0.22.0.apk",
-  "notes": "• Operator: the to-do list is the main screen now, on the Mac, iPhone, iPad and Android. Every to-do is one card that keeps its place through all its phases: a short title with the phase and a progress bar, where it stands in one line, the next step, and details folded away. An agent's question and the Operator's decisions show on the card as buttons (the recommended one starred) with an answer field, a ready PR gets a Merge button, and chips filter what needs you, what's to merge, what runs and what's put off (Later). The Operator's chat moved into a bar at the bottom (on the phones the second tab, after To-dos). The Operator writes the cards itself, nudges stuck workspaces, has clear review comments worked off, waits for checks and closes workspaces after a merge; merging and product decisions stay with you."
+  "versionName": "0.22.1",
+  "versionCode": 29894196,
+  "url": "https://lotum.github.io/stellwerk-releases/Stellwerk-0.22.1.apk",
+  "notes": "• Stellwerk for Mac: Claude chats can use Claude in Chrome again, as they could in Conductor. Settings → Agents → Claude in Chrome turns it on (on by default when the Claude extension is installed in Chrome or another Chromium browser), and the row says whether the extension was found. Chats that are running switch after their turn and keep their history. With it off, Claude tells you where to turn it on instead of quietly having no browser tools."
 }
