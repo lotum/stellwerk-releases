@@ -1,6 +1,6 @@
 {
-  "versionName": "0.18.1",
-  "versionCode": 29893417,
-  "url": "https://lotum.github.io/stellwerk-releases/Stellwerk-0.18.1.apk",
-  "notes": "• Stellwerk for Mac: projects without workspaces start collapsed in the sidebar. Opened by hand, they stay open. iPhone, iPad and Android have no collapsible projects, so nothing changes there."
+  "versionName": "0.19.0",
+  "versionCode": 29893507,
+  "url": "https://lotum.github.io/stellwerk-releases/Stellwerk-0.19.0.apk",
+  "notes": "• Operator, step two: the Operator is now a chat, on the Mac beside the overview and to-dos, on iPhone, iPad and Android with Chat and Status tabs. It runs on the Mac (Opus 5.5 at medium effort by default; Settings → Operator on the Mac), looks up what's open, reads a chat when you want details, passes your instructions to a chat, starts workspaces and keeps the to-do list. It never answers an agent's question on its own, only with your answer. A to-do added in the list goes to the Operator, which does small ones itself and starts a workspace for code changes; Settings → Operator turns that off.\n• Operator, step one: a new first entry above all projects on the Mac, iPhone, iPad and Android. It shows every chat that needs you, failed, is ready or works, each in one line, and a to-do list you can add to, edit, check off and start a workspace from. After each turn a small model on the Mac (Haiku by default, Settings → Operator on the Mac, or off) writes that line from the chat's last messages, so the overview costs no tokens to look at. The Operator chat itself comes next.\n• Stellwerk for Mac: \"Check for Updates…\" is now also in the app menu, below \"About Stellwerk\". iPhone, iPad and Android update through their stores or the download page, so nothing changes there."
 }
