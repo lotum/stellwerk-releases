@@ -3,6 +3,15 @@
   <channel>
     <title>Stellwerk</title>
     <item>
+      <title>Stellwerk 0.20.0</title>
+      <pubDate>Mon, 02 Nov 2026 10:05:00 GMT</pubDate>
+      <sparkle:version>202611020956</sparkle:version>
+      <sparkle:shortVersionString>0.20.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<h3>Minor Changes</h3><li>#13 `57904b5` Thanks @fabifink! - Operator: a to-do started in a workspace shows once instead of twice. It stays in the to-do list with its workspace&#x27;s state while the workspace works or is quiet, and moves up under Needs you, Failed or Ready, with the chat&#x27;s line, when the workspace has something for you. A tap on the workspace under the to-do opens the chat that needs you. Workspaces without a to-do keep their own lines.</li><h3>Patch Changes</h3><li>#11 `004c15e` Thanks @fabifink! - Stellwerk for Mac: a project&#x27;s &quot;Team chats&quot; block starts collapsed in the sidebar when the project has no team chats. Opened by hand, it stays open; as soon as team chats arrive, it opens by itself. iPhone, iPad and Android show no block without team chats, so nothing changes there.</li><li>#13 `57904b5` Thanks @fabifink! - Operator: a finished chat stays under Ready until you write in it, close it or archive its workspace. Opening it no longer takes it off the list, and a turn that ends while you watch shows up there too.</li>]]></description>
+      <enclosure url="https://lotum.github.io/stellwerk-releases/Stellwerk-Host-0.20.0-202611020956.dmg" sparkle:edSignature="dYNtwFa/GJcnxkSfM6Us4SAmSuh6g4YorkDofcXa2/IVLMrqPCg36Qq34T50ptKgj9g+VAdUm40BH7s9wCDqDg==" length="70113690" type="application/octet-stream"/>
+    </item>
+    <item>
       <title>Stellwerk 0.19.0</title>
       <pubDate>Mon, 02 Nov 2026 09:24:36 GMT</pubDate>
       <sparkle:version>202611020914</sparkle:version>
