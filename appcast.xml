@@ -3,6 +3,15 @@
   <channel>
     <title>Stellwerk</title>
     <item>
+      <title>Stellwerk 0.18.1</title>
+      <pubDate>Mon, 02 Nov 2026 07:51:04 GMT</pubDate>
+      <sparkle:version>202611020742</sparkle:version>
+      <sparkle:shortVersionString>0.18.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<h3>Patch Changes</h3><li>#6 `a6a5684` Thanks @fabifink! - Stellwerk for Mac: projects without workspaces start collapsed in the sidebar. Opened by hand, they stay open. iPhone, iPad and Android have no collapsible projects, so nothing changes there.</li>]]></description>
+      <enclosure url="https://lotum.github.io/stellwerk-releases/Stellwerk-Host-0.18.1-202611020742.dmg" sparkle:edSignature="HuWAnQt7lGuxiom6wUzhYFuT/Wn/nWonF+YKLIX0HmEj0DJq77ENCJ9ZlSOqY3wfcxBq/wPuZxrI5cHsWRaLDw==" length="69731455" type="application/octet-stream"/>
+    </item>
+    <item>
       <title>Stellwerk 0.18.0</title>
       <pubDate>Sun, 01 Nov 2026 20:49:36 GMT</pubDate>
       <sparkle:version>202611012040</sparkle:version>
