@@ -3,6 +3,15 @@
   <channel>
     <title>Stellwerk</title>
     <item>
+      <title>Stellwerk 0.24.0</title>
+      <pubDate>Wed, 04 Nov 2026 18:35:17 GMT</pubDate>
+      <sparkle:version>202611041824</sparkle:version>
+      <sparkle:shortVersionString>0.24.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<h3>Minor Changes</h3><li>#42 `a3ea1f1` Thanks @fabifink! - Operator: off by default, with an on/off switch at the top of Settings → Operator on the Mac. Its model, to-do and summary settings show once it&#x27;s on. While off, no app shows the Operator, no summaries are written and new to-dos stay in the list; turning it on or off shows or hides it on the Mac, iPhone, iPad and Android right away.</li><h3>Patch Changes</h3><li>#40 `5709ef2` Thanks @GarreltMock! - Stellwerk for Mac: Usage tab → &quot;Use the account with the most of its week left&quot;. New turns run on the Claude account that has used the least of its weekly limit; Stellwerk switches once another is 5 points lower (asking it first with a one-word Haiku turn, so the number is fresh) and, when limits run out, to the account with the most left.</li><li>#37 `8ff9550` Thanks @fabifink! - Mac: links in replies are blue, like on the iPhone and Android. They had the text colour before.</li><li>#40 `5709ef2` Thanks @GarreltMock! - Stellwerk for Mac: when the window can&#x27;t reach the Mac&#x27;s own host, it says why (busy, not listening, connection broke off) instead of asking about Tailscale. The API server starts again by itself if it stops. The host log (Copy diagnostics) now notes when the window loses and regains its host, and when the host stalls because every thread waits for a tool, with the tools running then.</li><li>#38 `eace0e9` Thanks @fabifink! - A message sent to a new workspace before its folder is there waits in the chat&#x27;s queue and goes out once it is, instead of failing with &quot;The workspace&#x27;s folder isn&#x27;t there (yet)&quot;. Creating the folder fetches the default branch first, which can take a while (up to two minutes when GitHub is slow).</li>]]></description>
+      <enclosure url="https://lotum.github.io/stellwerk-releases/Stellwerk-Host-0.24.0-202611041824.dmg" sparkle:edSignature="bx8oCSNDkO2PT6HSms3p+rQ9vG3CyQgE4X5mZ3KdMyX2GihrkBqifJe8qDxie5io1zuLsQg1PRhHC570cIYhCw==" length="70886358" type="application/octet-stream"/>
+    </item>
+    <item>
       <title>Stellwerk 0.23.1</title>
       <pubDate>Wed, 04 Nov 2026 11:32:11 GMT</pubDate>
       <sparkle:version>202611041122</sparkle:version>
@@ -37,15 +46,6 @@
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <description><![CDATA[<h3>Minor Changes</h3><li>#22 `35a19d2` Thanks @fabifink! - Operator: the to-do list is the main screen now, on the Mac, iPhone, iPad and Android. Every to-do is one card that keeps its place through all its phases: a short title with the phase and a progress bar, where it stands in one line, the next step, and details folded away. An agent&#x27;s question and the Operator&#x27;s decisions show on the card as buttons (the recommended one starred) with an answer field, a ready PR gets a Merge button, and chips filter what needs you, what&#x27;s to merge, what runs and what&#x27;s put off (Later). The Operator&#x27;s chat moved into a bar at the bottom (on the phones the second tab, after To-dos). The Operator writes the cards itself, nudges stuck workspaces, has clear review comments worked off, waits for checks and closes workspaces after a merge; merging and product decisions stay with you.</li>]]></description>
       <enclosure url="https://lotum.github.io/stellwerk-releases/Stellwerk-Host-0.22.0-202611022012.dmg" sparkle:edSignature="4d+StAcN00JRvvUONMG6dzyK4NTD9oP96t2HEePYTSCBhzRlC6s42BDLITV0wcpvzbgOTdRrz0YGkk9qJUEkAg==" length="70515202" type="application/octet-stream"/>
-    </item>
-    <item>
-      <title>Stellwerk 0.21.1</title>
-      <pubDate>Mon, 02 Nov 2026 16:00:05 GMT</pubDate>
-      <sparkle:version>202611021550</sparkle:version>
-      <sparkle:shortVersionString>0.21.1</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[<h3>Patch Changes</h3><li>#19 `f8000ba` Thanks @fabifink! - Stellwerk for Mac: quitting, updating or restarting Stellwerk now ends its agents instead of leaving them running unseen, where they finished their turn (pushing, opening PRs) while the chat still showed the old state. A chat Stellwerk quit or crashed during comes back as failed and unread, with a note in the chat and the Operator&#x27;s line &quot;Interrupted: Stellwerk quit during the turn.&quot;, instead of a quiet idle chat that the Operator and its to-dos showed as &quot;Idle&quot;. Agents a crash left running end at the next start.</li><li>#20 `4c705cc` Thanks @GarreltMock! - Chats open whole and stay put: pages start at a prompt and the first holds a few turns, Claude&#x27;s thinking progress no longer fills the transcript, and on the Mac older messages load without the chat jumping.</li><li>#20 `4c705cc` Thanks @GarreltMock! - Mac: pasted images and videos stay chips in your message (pasted-image.png); a click opens the image in a tab next to the chats.</li><li>#20 `4c705cc` Thanks @GarreltMock! - Mac: a merged PR shows Continue and Archive side by side, like Conductor.</li><li>#20 `4c705cc` Thanks @GarreltMock! - Mac: an attachment in the message box shows ✕ under the pointer (a click removes it), and a pasted image shows itself above its chip, like Conductor.</li>]]></description>
-      <enclosure url="https://lotum.github.io/stellwerk-releases/Stellwerk-Host-0.21.1-202611021550.dmg" sparkle:edSignature="1W5AEopjj4AJH7vtAcIz7TNjBP/ZhVd0lOxDWbJYReYTJ0HUguHO2CQx93IGBlGH66AWis+mGcXkQFfdvHqFAA==" length="70298673" type="application/octet-stream"/>
     </item>
   </channel>
 </rss>
